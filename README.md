@@ -1,0 +1,1 @@
+# Yappa Mailcatcher Docker Image
