@@ -1,6 +1,6 @@
 # Yappa Mailcatcher Docker Image
 
-This adds mailcatcher which is accessible throus your boot2docker ip on port 1080. To find out which IP your boot2docker is on, type `boot2docker ip` in your terminal. Mailcatcher will be running on http://\<boot2dockerIp\>:1080
+This adds mailcatcher, which is accessible through your boot2docker ip on port 1080. To find out which IP your boot2docker is on, type `boot2docker ip` in your terminal. Mailcatcher will be running on http://\<boot2dockerIp\>:1080
 
 ## Usage
 
@@ -13,3 +13,6 @@ mailcatcher:
         - 1025:1025
         - 1080:1080
 ```
+
+## References 
+* http://mailcatcher.me/
