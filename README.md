@@ -13,6 +13,9 @@ mailcatcher:
         - 1025:1025
         - 1080:1080
 ```
+Next, add this container to your php container's links.
 
-## References 
+You can now use mailcatcher as an smtp server, simply use 'mailcatcher', or whatever you named this container as host on port 1025.
+
+## References
 * http://mailcatcher.me/
