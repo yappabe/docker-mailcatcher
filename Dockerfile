@@ -21,4 +21,4 @@ RUN echo Europe/Brussels > /etc/timezone && dpkg-reconfigure --frontend noninter
 
 EXPOSE 1080 1025
 
-ENTRYPOINT ["mailcatcher", "--smtp-ip=0.0.0.0", "--http-ip=0.0.0.0", "--http-port=$HTTP_PORT", "--smtp-port=$SMTP_PORT", "--foreground"]
+ENTRYPOINT ["mailcatcher", "--smtp-ip=0.0.0.0", "--http-ip=0.0.0.0", "--http-port", "$HTTP_PORT", "--smtp-port", "$SMTP_PORT", "--foreground"]
