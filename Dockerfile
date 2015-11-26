@@ -2,6 +2,9 @@ FROM debian:jessie
 
 MAINTAINER Joeri Verdeyen <joeriv@yappa.be>
 
+ENV HTTP_PORT 1080
+ENV SMTP_PORT 1025
+
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -q -y \
     libsqlite3-dev \
@@ -18,4 +21,4 @@ RUN echo Europe/Brussels > /etc/timezone && dpkg-reconfigure --frontend noninter
 
 EXPOSE 1080 1025
 
-ENTRYPOINT ["mailcatcher", "--smtp-ip=0.0.0.0", "--http-ip=0.0.0.0", "--foreground"]
+ENTRYPOINT ["mailcatcher", "--smtp-ip=0.0.0.0", "--http-ip=0.0.0.0", "--http-port=$HTTP_PORT", "--smtp-port=$SMTP_PORT", "--foreground"]
