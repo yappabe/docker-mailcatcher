@@ -11,7 +11,7 @@ RUN apt-get update && \
     ruby \
     ruby-dev \
     build-essential && \
-    gem install --no-ri --no-rdoc mailcatcher --version 0.5.12 && \
+    gem install --no-ri --no-rdoc mailcatcher && \
     apt-get remove -y build-essential && \
     apt-get autoremove -y && \
     apt-get clean && \
