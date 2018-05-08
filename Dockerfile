@@ -5,7 +5,6 @@ MAINTAINER Joeri Verdeyen <joeriv@yappa.be>
 ENV HTTP_PORT 1080
 ENV SMTP_PORT 1025
 
-
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -q -y \
     libsqlite3-dev \
