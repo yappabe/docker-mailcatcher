@@ -8,7 +8,8 @@ ENV SMTP_PORT 1025
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -q -y \
     libsqlite3-dev \
-    ruby \
+    curl \
+    ruby \    
     ruby-dev \
     build-essential && \
     gem install --no-ri --no-rdoc mailcatcher && \
