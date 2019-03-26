@@ -1,3 +1,5 @@
+## NOTE: THIS REPO IS UNMAINTAINED, USE THE [MAILHOG IMAGE](https://github.com/yappabe/docker-mailhog)
+
 ![Docker pulls](https://img.shields.io/docker/pulls/yappabe/mailcatcher.svg?style=flat)
 
 # Yappa Mailcatcher Docker Image
